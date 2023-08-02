@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -7,6 +7,10 @@ import { toast } from "react-hot-toast";
 const Login = () => {
     const { signIn,googleSignIn } = useContext(AuthContext)
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleGoogleSignIn = ()=>{
         googleSignIn()

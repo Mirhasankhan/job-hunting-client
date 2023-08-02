@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Lottie from "lottie-react";
@@ -9,6 +9,10 @@ import { toast } from "react-hot-toast";
 const Register = () => {
     const { createUser,updateUserProfile } = useContext(AuthContext)
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const onSubmit = data => {
         const pass = (watch("password"));
