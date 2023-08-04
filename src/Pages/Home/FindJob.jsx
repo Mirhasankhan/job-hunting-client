@@ -20,7 +20,7 @@ const FindJob = () => {
     };
 
     return (
-        <div className="md:w-4/5 md:mx-auto mx-2">
+        <div className="md:mx-12 mx-2">
             <div className="">
                 <h1 className="text-xl md:text-3xl py-3 font-semibold">Search Job According To Your Skills</h1>
                 <div className="inline relative">

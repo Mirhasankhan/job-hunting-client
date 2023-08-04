@@ -45,10 +45,10 @@ const Register = () => {
 
     return (
         <div>
-            <h1 className="text-center text-3xl font-semibold py-6">Create An Account To Job<span className="text-sky-500">Hunting</span></h1>
-            <div className="grid md:grid-cols-2 gap-3 mt-4">
+            <h1 className="text-center text-xl md:text-3xl font-semibold py-6">Create An Account To Job<span className="text-sky-500">Hunting</span></h1>
+            <div className="grid md:grid-cols-2 gap-3 my-4 mx-6">
                 <div>
-                    <Lottie animationData={signUpFile} loop={true} />;
+                    <Lottie animationData={signUpFile} loop={true} />
                 </div>
                 <div className="md:mx-24">
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body border border-gray-500 rounded-md">
