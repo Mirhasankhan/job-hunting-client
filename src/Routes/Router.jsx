@@ -5,11 +5,13 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ViewJobs from "../Pages/ViewJobs/ViewJobs";
 import Profile from "../Pages/Profile/Profile";
+import WrongURL from "../Components/Firebase/WrongURL";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout/>,
+        errorElement: <WrongURL/>,
         children: [
             {
                 path: '/',
